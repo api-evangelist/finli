@@ -1,8 +1,29 @@
 aid: finli
 name: Finli
-description: Finli is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Finli is a financial technology platform serving two markets. For small and
+  medium-sized businesses it provides a full digital back office — professional
+  invoicing and quoting, payment processing (ACH, credit card, and Apple Pay),
+  customer relationship management, inventory tracking, and autopay. For banks
+  and credit unions it delivers those same tools as a white-labeled offering so
+  financial institutions can attract and deepen small-business relationships,
+  keep deposits, and own their customer data without taking on operational risk.
+  Finli is SOC 2 Type II certified and PCI DSS compliant, and was founded by CEO
+  Lori Shao. Added to the API Evangelist network as a Techstars portfolio
+  company; Finli publishes no public developer API at this time.
 url: https://raw.githubusercontent.com/api-evangelist/finli/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://finli.com/wp-content/uploads/2021/11/cropped-finli_circle_blue-larger-192x192.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Fintech
+- Payments
+- Invoicing
+- Small Business
+- Billing
+- Banking
+- ACH
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +51,28 @@ maintainers:
 common:
 - type: Website
   url: https://finli.com/
+- type: Pricing
+  url: https://finli.com/pricing
+- type: SignUp
+  url: https://portal.finli.com/signup
+- type: Login
+  url: https://portal.finli.com/login
+- type: Support
+  url: https://support.finli.com/
+- type: Blog
+  url: https://finli.com/learning-center
+- type: TermsOfService
+  url: https://finli.com/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://finli.com/privacy-policy/
+- type: Compliance
+  url: https://finli.com/compliance
+- type: Conformance
+  url: conformance/finli-conformance.yml
+- type: DomainSecurity
+  url: security/finli-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

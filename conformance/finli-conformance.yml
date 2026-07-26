@@ -1,0 +1,36 @@
+generated: '2026-07-19'
+method: searched
+source: https://finli.com/ (security & compliance section), https://finli.com/about-finli/, https://finli.com/compliance
+notes: >-
+  Finli publishes no public API specification, so cross-cutting API standards
+  (OAuth2/OIDC, RFC 9457, JSON:API, pagination, idempotency) cannot be asserted
+  from a spec and are recorded as not-evidenced rather than fabricated. The
+  entries below capture the security / compliance posture Finli publishes on its
+  marketing and compliance pages.
+standards:
+- id: soc2-type-ii
+  conforms: true
+  evidence: >-
+    Finli announced successful completion of SOC 2 Type II compliance
+    (published 2024-09-16); cited on finli.com and finli.com/about-finli.
+- id: pci-dss
+  conforms: true
+  evidence: >-
+    finli.com states the platform is PCI DSS compliant for card payment
+    processing (ACH, credit card, Apple Pay).
+- id: kyc-kyb
+  conforms: true
+  evidence: >-
+    finli.com describes KYC/KYB verification and transaction monitoring as part
+    of its onboarding and fraud controls.
+- id: tls-encryption
+  conforms: true
+  evidence: >-
+    finli.com states 256-bit SSL encryption in transit; live TLS probe confirms
+    TLSv1.3 on finli.com (see security/finli-domain-security.yml).
+- id: oauth2
+  conforms: false
+  evidence: no public OpenAPI or documented OAuth surface found.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: no public API specification published.
